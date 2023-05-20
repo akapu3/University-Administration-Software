@@ -16,7 +16,8 @@ public class Student {
         this.program = program;
         this.courses = new ArrayList<Course>();
     }
-
+nknjkjn
+    
     //Getters and Setters
     public String getName(){
         return this.name;
