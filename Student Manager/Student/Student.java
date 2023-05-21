@@ -15,9 +15,10 @@ public class Student {
         this.studentID = studentID;
         this.program = program;
         this.courses = new ArrayList<Course>();
+        Admin.addStudent(this);
     }
-nknjkjn
-    
+
+
     //Getters and Setters
     public String getName(){
         return this.name;
@@ -57,6 +58,9 @@ nknjkjn
         if(courses.contains(course)){
             courses.remove(course);
             course.dropStudent(this);
+        }
+        if(courses.size() == 0){
+            Admin.removeStudent(this);
         }
     }
 
